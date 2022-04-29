@@ -1,0 +1,65 @@
+
+		printf("*********************************************\n");
+		printf("WELCOME TO STUDENT DATABASE MANAGEMENT SYSTEM\n");
+		printf("*********************************************\n\n\n");
+		printf("\n       MAIN MENUE       ");
+    
+    printf("\n\n1. Create students record ");
+    printf("\n2. Modify student record ");
+    printf("\n3. Add student record ");
+    printf("\n4. Delete student  record ");
+    printf("\n5. Search student  record ");
+    printf("\n6. Display records of the student ");
+    printf("\n7. Calculate CGPA from the stored student record ");
+    printf("\n8. Show student record with cgpa ");
+    printf("\n9. Exit\n");
+    printf("\nplease enter your option: ");
+    scanf("%d",&ch);
+    add()  {
+printf("Enter present number of student ");
+scanf("%d",&n6);
+printf("How many students record you want to add ");
+scanf("%d",&y);
+p=n6+y;
+for(i=n6;i<p;i++)
+{
+printf("Name of the student(between 3 to 9 character): ");
+    getchar();
+gets(s[i].n);
+printf("id of the student: ");
+scanf(" %d",&s[i].id);
+printf("department of the student: ");
+getchar();
+gets(s[i].dep);
+printf("phone number of the student(11 digit): ");
+scanf("%llu",&s[i].phn); }
+   printf("\nto go to main menue type 'm' ");
+scanf("%s",&a);
+if (strcmp(a,"m")==0)
+input(); }
+cgpa() {
+printf("enter how many sub course ");
+scanf("%d",&n2);
+for(j=1;j<=n2;j++) {
+printf("enter subject name\n");
+getchar();
+scanf("%s",&s[i].s2[j].sub);
+printf("enter subject subject marks out of 100 \n");
+scanf("%f",&s[i].s2[j].m);
+printf("enter credit of that course \n");
+scanf("%f",&c);
+    modify()  {
+	printf("Name of the student(between 3 to 9 character): ");
+    getchar();
+	gets(s[i].n);
+	printf("id of the student: ");
+	scanf(" %d",&s[i].id);
+	printf("department of the student: ");
+	getchar();
+	gets(s[i].dep);
+	printf("phone number of the student(11 digit): ");
+	scanf("%llu",&s[i].phn);
+	printf("\nIf you were going back to main menu type 'm'");
+	scanf("%s",&a);
+	if (strcmp(a,"m")==0)
+	input();  }
